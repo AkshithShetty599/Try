@@ -21,10 +21,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+
 # Load the trained model
-model = load_model(
-    r"C:\Users\Akshith shetty\Desktop\Final Try\eye-heart-risk-vision\backend\model\heart_risk_model.h5"
-)
+model = load_model("model/heart_risk_model.h5")
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
