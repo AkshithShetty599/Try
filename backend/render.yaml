@@ -7,4 +7,4 @@ services:
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
-    pythonVersion: 3.10.13  # ✅ required for TensorFlow compatibility
+    pythonVersion: 3.11  # ✅ required for TensorFlow compatibility
