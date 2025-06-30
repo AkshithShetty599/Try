@@ -77,7 +77,7 @@ const handlePredict = async () => {
     const formData = new FormData();
     formData.append("file", selectedImage);
 
-    const response = await fetch("http://localhost:8000/predict", {
+    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/predict`, {
       method: "POST",
       body: formData,
     });
