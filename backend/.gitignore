@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Virtual environment
+venv/
+.venv
+
+# Environment files
+.env
+
+# Testing/IDE files
+.mypy_cache/
+.pytest_cache/
+.DS_Store
+.vscode/
+.idea/
